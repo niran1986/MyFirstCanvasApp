@@ -26,7 +26,8 @@
     <!-- Third part libraries, substitute with your own -->
     <script type="text/javascript" src="/scripts/json2.js"></script>
 
-   <script type="text/javascript" src="https://.salesforce.com/canvas/sdk/js/36.0/canvas-all.js">
+   <script type="text/javascript" src="https://mylearnsf-dev-ed.my.salesforce.com/canvas/sdk/js/36.0/canvas-all.js"></script>
+<script type="text/javascript">
         if (self === top) {
             // Not in Iframe
             alert("This canvas app must be included within an iframe");
@@ -43,6 +44,6 @@
 </head>
 <body>
     <br/>
-    <h1>Hello I Am Niran<span id='username'></span></h1>
+    <h1>Hello I Am Niran Check<span id='username'></span></h1>
 </body>
 </html>
