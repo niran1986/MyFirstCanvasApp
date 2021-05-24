@@ -26,7 +26,7 @@
     <!-- Third part libraries, substitute with your own -->
     <script type="text/javascript" src="/scripts/json2.js"></script>
 
-    <script>
+   <script type="text/javascript" src="https://.salesforce.com/canvas/sdk/js/36.0/canvas-all.js">
         if (self === top) {
             // Not in Iframe
             alert("This canvas app must be included within an iframe");
@@ -35,9 +35,7 @@
         Sfdc.canvas(function() {
             var sr = JSON.parse('<%=signedRequestJson%>');
             // Save the token
-            Sfdc.canvas.oauth.token(sr.oauthToken);
-            alert('test');
-            alert(sr.context.user.fullName);
+            Sfdc.canvas.oauth.token(sr.oauthToken);          
             Sfdc.canvas.byId('username').innerHTML = sr.context.user.fullName;
         });
 
